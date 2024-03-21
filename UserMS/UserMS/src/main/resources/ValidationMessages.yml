@@ -1,0 +1,28 @@
+user:
+  username:
+    absent: Please provide username.
+    invalid: Please provide valid username.
+  fullname:
+    absent: Please provide fullname.
+    invalid: Please provide valid fullname.
+  email:
+    absent: Please provide email.
+    invalid: Please provide valid email.
+  dob:
+    absent: Please provide Date of Birth.
+    invalid: Please provide valid Date of Birth.
+  gender:
+    absent: Please provide gender.
+  password:
+    absent: Please provide password.
+    invalid: Please provide a valid password.
+  userid:
+    absent: Please provide user Id.
+  profile:
+    id:
+      absent: Please provide profile id.
+userid:
+  absent: Please provide userid.
+username:
+  absent: Please provide username.
+

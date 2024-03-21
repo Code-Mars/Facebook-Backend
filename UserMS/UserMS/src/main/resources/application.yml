@@ -1,0 +1,41 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: UserMS
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://localhost:27017/users_db
+  cloud:
+    consul: 
+      host: localhost
+      discovery:
+        hostname: localhost 
+
+resilience4j.circuitbreaker:
+  instances:
+    userService:
+      failureRateThreshold: 50
+      sliding-window-size: 10
+      sliding-window-type: count-based
+      minimum-number-of-calls: 5
+      waitDurationInOpenState: 30s 
+      automaticTransitionFromOpenToHalfOpenEnabled: true    
+      
+
+General:
+  EXCEPTION_MESSAGE: Some error occurred, Please try again later.
+Service:
+  INVALID_CREDENTIALS: Invalid Credentials.
+  USERS_NOT_FOUND: No users found.
+  USER_FOUND: user already present.
+  USER_NOT_FOUND: User not found. Give valid user details.
+  USER_INVALID_DOB: User must be 13 years old.
+  INVALID_USERNAME_OR_EMAIL: Invalid username or email;
+UserAPI:
+  PASSWORD_RESET_SUCCESSFUL: Password reset successful.
+  USER_FRIEND_LIST_NOT_FOUND: User friend list not found.
+  USER_UPDATED_SUCCESSFULLY: User updated successfully.
+UserProfileAPI:
+  PROFILE_UPDATE_SUCCESSFUL: Profile upadted successfully.
