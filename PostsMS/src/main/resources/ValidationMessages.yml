@@ -1,0 +1,7 @@
+userid:
+  absent: User id is not present
+pagenum:
+  absent: Page no is not present
+  invalid: Page no is invalid
+postedby:
+  absent: Posted By is absent

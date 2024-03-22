@@ -1,0 +1,26 @@
+server:
+  port: 9200
+spring:
+  application:
+    name: PostsMS
+  data:
+      mongodb:
+        auto-index-creation: true
+        uri: mongodb://localhost:27017/posts_db
+  cloud:
+    consul: 
+      host: localhost
+      discovery:
+        hostname: localhost 
+
+PostAPI:
+  POST_SAVE_SUCCESSFUL: Post created successfully.
+  POST_UPDATE_SUCCESSFUL: Post updated successfully.
+  POST_DELETE_SUCCESSFUL: Post deleted successfully.
+  USER_ID_NOT_FOUND: User id not found.
+  USER_NAME_NOT_FOUND: User name not found.
+  POST_LIKED_SUCCESSFUL: Post liked Successfully;
+  COMMENT_SUCCESSFUL: Comment added successfully.
+Service:
+  POSTS_NOT_FOUND: Post does not exists.
+  POST_ID_NOT_PRESENT: Post id is not present.

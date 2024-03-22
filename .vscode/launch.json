@@ -9,6 +9,16 @@
             "projectName": "UserMS",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PostsMsApplication<PostsMS>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.facebook.posts.PostsMsApplication",
+            "projectName": "PostsMS",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
