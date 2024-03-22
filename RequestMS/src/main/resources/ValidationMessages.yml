@@ -1,0 +1,9 @@
+sentto:
+  notpresent: SendTo should not be null or empty
+sentFrom:
+  notpresent: SendFrom should not be null or empty
+friendrequest:
+  sentto:
+    notpresent: SendTo should not be null or empty
+  sentfrom:
+    notpresent: SendFrom should not be null or empty

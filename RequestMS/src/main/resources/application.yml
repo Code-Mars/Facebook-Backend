@@ -1,0 +1,24 @@
+server:
+  port: 9400
+spring:
+  application:
+    name: RequestMS
+  data:
+      mongodb:
+        auto-index-creation: true
+        uri: mongodb://localhost:27017/requests_db
+  cloud:
+    consul: 
+      host: localhost
+      discovery:
+        hostname: localhost 
+
+
+
+FriendRequestAPI:
+  REQUEST_ACCEPT_SUCCESSFULLY: Friend request accepted successfully.
+  REQUEST_DECLINE_SUCCESSFULLY: Friend Request declined succesfully.
+  REQUEST_REVOKED_SUCCESSFULLY: Friend request revoked successfully.
+  REQUEST_SENT_SUCCESSFULLY: Friend request sent successfully.
+Service:
+  FRIEND_REQUEST_ALREADY_EXISTS: Friend request already exists.

@@ -19,6 +19,16 @@
             "projectName": "PostsMS",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RequestMsApplication<RequestMS>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.facebook.request.RequestMsApplication",
+            "projectName": "RequestMS",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
