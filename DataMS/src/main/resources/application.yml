@@ -1,0 +1,27 @@
+server:
+  port: 9300
+spring:
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/data_db
+  application:
+    name: DataMS
+  cloud:
+    consul: 
+      host: localhost
+      discovery:
+        hostname: localhost 
+      
+      
+storage:
+  path: M:\Vs Code\Java\DataRepoFacebook\
+
+SERVICE:
+  NOT_FOUND: File not found!
+  IO_EXCEPTION: Something went wrong while reading/writing file.
+  FILE_LOST: Sorry we misplaced the file.
+GENERAL_MESSAGE: Something went wrong.

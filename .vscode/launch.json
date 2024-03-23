@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DataMsApplication",
+            "request": "launch",
+            "mainClass": "com.facebook.data.DataMsApplication",
+            "projectName": "DataMS"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-UserMsApplication<UserMS>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -27,6 +34,26 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.facebook.request.RequestMsApplication",
             "projectName": "RequestMS",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-FriendMsApplication<FriendMS>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.facebook.friend.FriendMsApplication",
+            "projectName": "FriendMS",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GatewayMsApplication<GatewayMS>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.facebook.gateway.GatewayMsApplication",
+            "projectName": "GatewayMS",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

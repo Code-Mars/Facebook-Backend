@@ -1,0 +1,23 @@
+server:
+  port: 9500
+spring:
+  application:
+    name: FriendMS
+  data:
+      mongodb:
+        auto-index-creation: true
+        uri: mongodb://localhost:27017/friends_db
+  cloud:
+    consul: 
+      host: localhost
+      discovery:
+        hostname: localhost 
+
+FriendAPI:
+  FRIEND_ADDED_SUCCESS: Friend added successfully.
+  FRIEND_LIST_REGISTER_SUCCESS: Friend list registered successfully.
+  FRIEND_REMOVE_SUCCESS: Friend removed successfully.
+General:
+  EXCEPTION_MESSAGE: Some error occurred, Please try again later.
+Service:
+  FRIEND_LIST_NOT_FOUND: Friend list not found.
